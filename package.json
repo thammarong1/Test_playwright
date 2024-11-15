@@ -9,7 +9,7 @@
     "sit:runUI": "ENV=sit npx playwright test src/tests --ui",
     "sit:Headed": "ENV=sit npx playwright test src/tests --headed",
     "sit:Debug": "ENV=sit npx playwright test src/tests --debug",
-    "sit:account": "ENV=sit npx playwright test src/tests/accountSearch.spec"
+    "sit:account": "ENV=uat npx playwright test src/tests/accountSearch.spec"
   },
   "keywords": [],
   "author": "",
