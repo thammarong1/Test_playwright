@@ -1,0 +1,42 @@
+[
+    {
+        "phoneNumber": "0619462551",
+        "firstName": "",
+        "lastName": "",
+        "cardNo": "",
+        "loginName": "",
+        "expectedCardNumber": "1004870000000364"
+    },
+    {
+        "phoneNumber": "0619462551",
+        "firstName": "NO",
+        "lastName": "",
+        "cardNo": "",
+        "loginName": "",
+        "expectedCardNumber": "No data."
+    },
+    {
+        "phoneNumber": "",
+        "firstName": "มกราคม",
+        "lastName": "",
+        "cardNo": "",
+        "loginName": "",
+        "expectedCardNumber": "1004870000000364"
+    },
+    {
+        "phoneNumber": "",
+        "firstName": "",
+        "lastName": "กุมภาพันธ์",
+        "cardNo": "",
+        "loginName": "",
+        "expectedCardNumber": "1004870000000364"
+    },
+    {
+        "phoneNumber": "",
+        "firstName": "",
+        "lastName": "",
+        "cardNo": "1004870000000364",
+        "loginName": "",
+        "expectedCardNumber": "1004870000000364"
+    }
+]

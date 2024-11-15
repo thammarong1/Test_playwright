@@ -1,5 +1,5 @@
 import { Page, expect } from '@playwright/test';
-import { ACCOUNT_SEARCH_LOCATOR, HOME_LOCATOR } from '../../utils/locator';
+import { ACCOUNT_SEARCH_LOCATOR, HOME_LOCATOR } from '../../../utils/locator';
 
 export class AccountSearchPage {
     constructor(private page: Page) { }

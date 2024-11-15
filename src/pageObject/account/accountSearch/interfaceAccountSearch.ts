@@ -1,4 +1,4 @@
-export interface AccountSearchDataType {
+export interface AccountSearchRecord {
     phoneNumber: string;
     firstName: string;
     lastName: string;
