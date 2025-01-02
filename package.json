@@ -7,7 +7,7 @@
     "sit:runUI": "ENV=sit npx playwright test src/tests --ui",
     "sit:Headed": "ENV=sit npx playwright test src/tests --headed",
     "sit:Debug": "ENV=sit npx playwright test src/tests --debug",
-    "--------": "------------------- run ทั้งหมดของ project ---------------",
+    "--------": "------------------- run ทั้งหมดของ project ----------------",
     "sit:ui": "ENV=sit npx playwright test --project='UI_BOF'",
     "api_core": "ENV=sit npx playwright test --project='API_Core'",
     "api_mobile": "ENV=sit npx playwright test --project='API_Mobile'",
