@@ -15,6 +15,3 @@
  2.1 npm run sit:run
  2.2 npm run sit:account
 
-
-# Test_playwright
-# Test_playwright
