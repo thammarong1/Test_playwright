@@ -1,0 +1,34 @@
+import { test, expect, Page } from '@playwright/test';
+import { LoginPage } from "../pageObject/login/register";
+
+const authFile = './src/auth/user.json'
+
+
+export class HelperBase{
+    readonly page: Page
+    private loginPage: LoginPage;
+
+    constructor(page: Page){
+        this.page = page
+        this.loginPage = new LoginPage(page);
+    }
+    // ฟังก์ชัน waitForSeconds สำหรับการรอเวลา
+    async waitForSeconds(seconds: number) {
+        await this.page.waitForTimeout(seconds * 1000);
+    }
+
+    
+    async loginSuccess() {
+        await this.loginPage.navigateToLoginPage();
+        const username = process.env.USERNAME || "";
+        const password = process.env.PASSWORD || "";
+
+        if (!username || !password) {
+            throw new Error("USERNAME or PASSWORD is not defined in environment variables.");
+        }
+        await this.loginPage.typeUsername(username); 
+        await this.loginPage.typePassword(password);  
+        await this.loginPage.pressLoginButton(); 
+        await this.loginPage.verifyHomepageDisplayed();
+    }
+}
