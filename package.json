@@ -4,11 +4,14 @@
   "description": "playwrightTest",
   "main": "index.js",
   "scripts": {
-    "sit:run": "ENV=sit npx playwright test src/tests",
-    "uat:run": "ENV=uat npx playwright test src/tests",
     "sit:runUI": "ENV=sit npx playwright test src/tests --ui",
     "sit:Headed": "ENV=sit npx playwright test src/tests --headed",
     "sit:Debug": "ENV=sit npx playwright test src/tests --debug",
+    "--------": "------------------- run ทั้งหมดของ project ---------------",
+    "sit:ui": "ENV=sit npx playwright test --project='UI_BOF'",
+    "api_core": "ENV=sit npx playwright test --project='API_Core'",
+    "api_mobile": "ENV=sit npx playwright test --project='API_Mobile'",
+    "api_client": "ENV=dev npx playwright test --project='API_Client'",
     "---------":"---------------------------------------------------",
     "run": "ENV=sit npx playwright test src/tests/UI_BOF/register.spec.ts --headed"
   },
